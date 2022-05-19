@@ -38,6 +38,14 @@ const inventors = [
 
   // Array.prototype.sort()
   // 3. Sort the inventors by birthdate, oldest to youngest
+  const iventorsBirthdate = inventors.sort(function(firstPerson, secondPerson){
+        if(firstPerson.year < secondPerson.year){
+            return 1;
+        } else{
+            return -1;
+        }
+  })
+  console.table(iventorsBirthdate);
 
   // Array.prototype.reduce()
   // 4. How many years did all the inventors live all together?
