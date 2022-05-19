@@ -78,10 +78,11 @@ const inventors = [
   // 7. sort Exercise
   // Sort the people alphabetically by last name
   const alpha = people.sort(function(lastOne,nextOne){
-      const [last,first] = lastOne.split(', ');
-      console.log(last,first);
+      const [aLast,aFirst] = lastOne.split(', ');
+      const [bLast,bFirst] = nextOne.split(', ');
+      return aLast < bLast ? -1 : 1;
   })
-
+    console.log(alpha)
 
   // 8. Reduce Exercise
   // Sum up the instances of each of these
