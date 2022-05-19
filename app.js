@@ -28,6 +28,7 @@ const inventors = [
             return true; 
         } 
     })
+    console.table(fifteen);
   // Array.prototype.map()
   // 2. Give us an array of the inventors first and last names
 
