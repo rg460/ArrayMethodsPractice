@@ -26,9 +26,7 @@ const inventors = [
     const fifteen = inventors.filter(function(inventor){
         if(inventor.year >= 1500 && inventor.year <= 1599){
             return true; 
-        } else{
-            return false;
-        }
+        } 
     })
   // Array.prototype.map()
   // 2. Give us an array of the inventors first and last names
