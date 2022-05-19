@@ -70,13 +70,18 @@ const inventors = [
   // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
   const category = document.querySelector('.mw-category');
-  const links = [...cateegory.querySelectorAll('a')];
+  const links = [...category.querySelectorAll('a')];
   const de = 
             links.map(link => link.textContent);
              links .filter(streetName => streetName.includes('de'));
 
   // 7. sort Exercise
   // Sort the people alphabetically by last name
+  const alpha = people.sort(function(lastOne,nextOne){
+      const [last,first] = lastOne.split(', ');
+      console.log(last,first);
+  })
+
 
   // 8. Reduce Exercise
   // Sum up the instances of each of these
